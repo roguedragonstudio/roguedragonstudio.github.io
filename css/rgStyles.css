@@ -1,12 +1,24 @@
 /*
  * Globals
  */
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+ h1{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+ }
+ h2,h3,h4,h5 {
+  font-family: 'Roboto', sans-serif;
+ }
+ p {
+  font-family: 'Roboto', sans-serif;
+ }
+ 
 /* Links */
-a,
+
 a:focus,
 a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* Custom default button */
@@ -54,16 +66,26 @@ body {
   background-color: rgba(255,255,255,0.1)!important;
 }
 .navbar-light.bg-light {
-  background-color: rgba(255, 193, 7,0.95)!important;
+  background-color: rgba(35, 35, 35, 0.60)!important;
+  font-family: 'Roboto', sans-serif;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
+  color: #ffc10a;
+}
+.nav-link.active{
+  color:#fff !important;
 }
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show>.nav-link {
     color: #ffc10a;
+}
+.navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=ffc10a') !important;
+}
+.navbar-toggler {
+  border-color: #ffc10a !important;
 }
 .masthead {
   margin-bottom: 2rem;
@@ -309,6 +331,7 @@ DIV.description{
     left: 10%;
     top: 45%;
   }
+  
   .btn-lg {
     padding: .5rem 1rem;
     font-size: 0.7rem;
